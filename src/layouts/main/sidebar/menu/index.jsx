@@ -3,12 +3,18 @@ import classNames from 'classnames';
 import { MainMenu } from '~/utils/consts';
 import NewPost from './newPost';
 import More from './more';
+import { useAccount } from '~/store/auth/hooks';
 
 export default function Menu() {
+  const account = useAccount();
   return (
-    <nav className='mt-0.5 mb-1'>
+    <nav className='mt-0.5 mb-1' key={account.id}>
       {MainMenu.map((link, index) => (
-        <NavLink key={index} to={link.path} className='py-[3px] block group'>
+        <NavLink
+          key={index}
+          to={typeof link.path === 'function' ? link.path() : link.path}
+          className='py-[3px] block group'
+        >
           {({ isActive }) => (
             <div
               className={classNames(

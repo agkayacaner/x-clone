@@ -62,18 +62,18 @@ export default function More() {
           </div>
           <div className='text-xlpr-4 font-bold'>Para kazanma</div>
         </button>
-        <hr className='py-0.5 border-[#2f3336] w-[90%]' />
+        <hr className='py-0.5 border-[#2f3336] w-[89%] mx-auto' />
         <Disclosure>
           {({ open }) => (
             <>
-              <Disclosure.Button className='h-[52px] text-[15px] flex w-full items-center justify-between bg-black px-4 text-left  font-medium hover:bg-[#eff3f41a] focus:outline-none focus-visible:ring focus-visible:ring-purple-500 focus-visible:ring-opacity-75'>
+              <Disclosure.Button className='h-[52px] text-[15px] flex w-full items-center justify-between bg-black px-4 text-left  font-medium hover:bg-[#eff3f41a] focus:outline-none focus-visible:ring focus-visible:ring-opacity-75'>
                 <span>İçerik Üreticisi Stüdyosu</span>
                 <svg
                   viewBox='0 0 24 24'
                   width={18.75}
                   height={18.75}
                   className={classNames('transform transition-transform', {
-                    'rotate-180': open,
+                    '-rotate-180': open,
                   })}
                 >
                   <path
@@ -106,14 +106,14 @@ export default function More() {
         <Disclosure>
           {({ open }) => (
             <>
-              <Disclosure.Button className='h-[52px] text-[15px] flex w-full items-center justify-between bg-black px-4 text-left font-medium hover:bg-[#eff3f41a] focus:outline-none focus-visible:ring focus-visible:ring-purple-500 focus-visible:ring-opacity-75'>
+              <Disclosure.Button className='h-[52px] text-[15px] flex w-full items-center justify-between bg-black px-4 text-left font-medium hover:bg-[#eff3f41a] focus:outline-none focus-visible:ring focus-visible:ring-opacity-75'>
                 <span>Profesyonel Araçlar</span>
                 <svg
                   viewBox='0 0 24 24'
                   width={18.75}
                   height={18.75}
                   className={classNames('transform transition-transform', {
-                    'rotate-180': open,
+                    '-rotate-180': open,
                   })}
                 >
                   <path
@@ -146,14 +146,14 @@ export default function More() {
         <Disclosure>
           {({ open }) => (
             <>
-              <Disclosure.Button className='h-[52px] text-[15px] flex w-full items-center justify-between bg-black px-4 text-left  font-medium hover:bg-[#eff3f41a] focus:outline-none focus-visible:ring focus-visible:ring-purple-500 focus-visible:ring-opacity-75'>
+              <Disclosure.Button className='h-[52px] text-[15px] flex w-full items-center justify-between bg-black px-4 text-left  font-medium hover:bg-[#eff3f41a] focus:outline-none focus-visible:ring focus-visible:ring-opacity-75'>
                 <span>Ayarlar ve Destek</span>
                 <svg
                   viewBox='0 0 24 24'
                   width={18.75}
                   height={18.75}
                   className={classNames('transform transition-transform', {
-                    'rotate-180': open,
+                    '-rotate-180': open,
                   })}
                 >
                   <path

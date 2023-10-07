@@ -1,7 +1,14 @@
 import { createBrowserRouter } from 'react-router-dom';
 import MainLayout from '~/layouts/main';
+import Bookmarks from '~/pages/bookmarks';
+import Explore from '~/pages/explore';
 import Home from '~/pages/home';
+import Lists from '~/pages/list';
+import List from '~/pages/list';
+import Messages from '~/pages/messages';
 import NotFound from '~/pages/not-found';
+import Notifications from '~/pages/notifications';
+import Profile from '~/pages/profile';
 
 const routes = createBrowserRouter([
   {
@@ -14,11 +21,27 @@ const routes = createBrowserRouter([
       },
       {
         path: 'explore',
-        element: 'keşfet',
+        element: <Explore />,
       },
       {
         path: 'notifications',
-        element: 'bildirimler',
+        element: <Notifications />,
+      },
+      {
+        path: 'messages',
+        element: <Messages />,
+      },
+      {
+        path: 'lists',
+        element: <Lists />,
+      },
+      {
+        path: 'bookmarks',
+        element: <Bookmarks />,
+      },
+      {
+        path: ':slug',
+        element: <Profile />,
       },
       {
         path: '*',
